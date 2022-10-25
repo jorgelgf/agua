@@ -1,0 +1,22 @@
+import styled from "styled-components";
+
+export const ContainerCenter = styled.div`
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bgColor);
+  width: 100%;
+  @media (max-width: 460px) {
+    display: inline;
+  }
+`;
+
+export const ButtonDiv = styled.div`
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 35px;
+  width: 100%;
+`;
