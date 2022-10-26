@@ -69,6 +69,7 @@ export default function Payment() {
       setModal(true);
       localStorage.setItem("Troco", `${value}`);
     }
+    navigation("/SendOrder");
   };
   const handleClickFinsh = () => {
     navigation("/SendOrder");
