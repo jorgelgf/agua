@@ -13,7 +13,7 @@ export const orderList: orderListProps = {
   contact: "Contato",
   cep: "CEP",
   address: "Rua",
-  number: "Número",
+  number: "Numero",
   district: "Bairro",
   complement: "Complemento",
 };

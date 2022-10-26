@@ -4,7 +4,7 @@ import { useState } from "react";
 import * as S from "./styles";
 import Button from "../../components/Button";
 import { themes } from "../../styles/styles";
-//import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { InputMoney } from "../../components/Input/InputMoney";
 
@@ -29,7 +29,7 @@ export default function Payment() {
   const [pix, setPix] = useState(false);
   const [value, setValue] = useState("");
 
-  //const navigation = useNavigate();
+  const navigation = useNavigate();
 
   const handleClickBack = () => {
     setStateBoolean(false);
@@ -65,15 +65,22 @@ export default function Payment() {
     setStateBoolean(true);
   };
   const handleClickNext = () => {
-    money && setModal(true);
+    if (money) {
+      setModal(true);
+      localStorage.setItem("Troco", `${value}`);
+    }
+  };
+  const handleClickFinsh = () => {
+    navigation("/SendOrder");
   };
 
   const Total = (): React.ReactNode => {
     return (
       <>
         <S.ContainerCenter>
-          <Header />
           <Layout>
+            <Header />
+
             <S.QuestionContainer>
               <S.ItemHeader>ESCOLHA UMA DAS</S.ItemHeader>
               <S.ItemHeader>FORMAS DE PAGAMENTO?</S.ItemHeader>
@@ -159,7 +166,6 @@ export default function Payment() {
               flexDirection: "column",
             }}
           >
-            {" "}
             <p>INSIRA O VALOR</p>
             <p> PARA O TROCO</p>
           </div>
@@ -188,11 +194,10 @@ export default function Payment() {
                   VOLTAR
                 </Button>
                 <div style={{ margin: "0 0 0 10px" }}>
-                  {" "}
                   <Button
                     backgroundColor={themes.colorButtonGreen}
                     color={themes.colorTextButtonGreen}
-                    onClick={handleClickNext}
+                    onClick={handleClickFinsh}
                   >
                     PROSSEGUIR
                   </Button>

@@ -11,6 +11,7 @@ export const Container = styled.div`
   flex-direction: column;
   transform: translateX(-20px);
   animation: animeLeft 0.4s forwards;
+
   @media (max-width: 460px) {
     width: auto;
   }

@@ -63,9 +63,18 @@ export const ContainerInformation = styled.button`
   }
 
   @media (max-width: 516px) {
-    width: auto;
+    width: 100%;
+    span {
+      margin: 0 36px 0 46px;
+    }
   }
 
+  @media (max-width: 290px) {
+    width: 100%;
+    span {
+      font-size: 12px;
+    }
+  }
   span {
     margin: 0 36px 0 36px;
   }
