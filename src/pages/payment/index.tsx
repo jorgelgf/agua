@@ -141,7 +141,7 @@ export default function Payment() {
                       color={themes.colorTextButtonGreen}
                       onClick={handleClickNext}
                     >
-                      FINALIZAR
+                      PROSSEGUIR
                     </Button>
                   </div>
                 </div>
@@ -199,7 +199,7 @@ export default function Payment() {
                     color={themes.colorTextButtonGreen}
                     onClick={handleClickFinsh}
                   >
-                    PROSSEGUIR
+                    FINALIZAR
                   </Button>
                 </div>
               </div>
