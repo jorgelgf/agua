@@ -43,7 +43,6 @@ export default function Order() {
     localStorage.setItem(complement, complementUser);
     setValidation(true);
     toast.success("Clique em avançar para prosseguir!");
-    navigation("/choice");
   };
 
   return (
@@ -100,7 +99,7 @@ export default function Order() {
                 <Button
                   backgroundColor={themes.colorButtonGreen}
                   color={themes.colorTextButtonGreen}
-                  onClick={() => console.log("next ok")}
+                  onClick={() => navigation("/choice")}
                 >
                   AVANÇAR
                 </Button>

@@ -42,6 +42,9 @@ export const ContainerForm = styled.form`
     @media (max-width: 300px) {
       width: 300px;
     }
+    @media (max-width: 500px) {
+      width: auto;
+    }
   }
 `;
 

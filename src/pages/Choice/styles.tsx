@@ -99,9 +99,11 @@ export const PlusButton = styled.button`
   background-color: transparent;
   border: none;
 `;
-export const LessSpan = styled.span`
+export const LessSpan = styled.button`
   color: var(--colorIconRed);
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 `;
 
 export const ContainerInformationTotal = styled.div`
@@ -148,4 +150,7 @@ export const DivButton = styled.div`
   margin-top: 59px;
   display: flex;
   justify-content: flex-end;
+  @media (max-width: 500px) {
+    width: 310px;
+  }
 `;

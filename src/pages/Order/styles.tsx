@@ -12,6 +12,11 @@ export const ContainerCenter = styled.div`
     display: inline;
   }
 `;
+export const DivInput = styled.div`
+  @media (max-width: 500px) {
+    width: 310px;
+  }
+`;
 
 export const ButtonDiv = styled.div`
   margin-top: 40px;
@@ -19,4 +24,7 @@ export const ButtonDiv = styled.div`
   justify-content: flex-end;
   margin-right: 35px;
   width: 100%;
+  @media (max-width: 500px) {
+    width: 350px;
+  }
 `;

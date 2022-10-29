@@ -5,18 +5,17 @@ import { themes } from "../../styles/styles";
 import * as S from "./styles";
 
 export default function SendOrder() {
-  const total = {
-    Nome: `${localStorage.getItem("Nome")}`,
-    Contato: `${localStorage.getItem("Contato")}`,
-    Rua: `${localStorage.getItem("Rua")}`,
-    Bairro: `${localStorage.getItem("Bairro")}`,
-    CEP: `${localStorage.getItem("CEP")}`,
-    Número: `${localStorage.getItem("Numero")}`,
-    Pagamento: `${localStorage.getItem("Pagamento")}`,
-    Troco: `${localStorage.getItem("Troco")}`,
-  };
-
-  const info = JSON.stringify(total);
+  const text = `
+  Nome: ${localStorage.getItem("Nome")},
+  Contato: ${localStorage.getItem("Contato")},
+  Rua: ${localStorage.getItem("Rua")},
+  Bairro: ${localStorage.getItem("Bairro")},
+  CEP: ${localStorage.getItem("CEP")},
+  Número: ${localStorage.getItem("Numero")},
+  Pagamento: ${localStorage.getItem("Pagamento")},
+  Troco: ${localStorage.getItem("Troco")},
+  ` as string;
+  const info = window.encodeURIComponent(text) as string;
   return (
     <Layout>
       <Header />
