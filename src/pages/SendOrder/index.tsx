@@ -5,8 +5,7 @@ import { themes } from "../../styles/styles";
 import * as S from "./styles";
 
 export default function SendOrder() {
-  const text = `
-  Olá! Estou entrando em contato para realizar um pedido.\n
+  const text = `Olá! Estou entrando em contato para realizar um pedido.\n
   Segue abaixo as informações necessárias...\n
   *Nome*: ${localStorage.getItem("Nome")},
   *Contato*: ${localStorage.getItem("Contato")},
