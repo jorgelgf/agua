@@ -65,13 +65,9 @@ export default function Payment() {
     setPix(true);
     setStateBoolean(true);
   };
-  const handleClickNext = () => {
-    if (money) {
-      localStorage.setItem("Troco", `${value}`);
-    }
-    navigation("/SendOrder");
-  };
+
   const handleClickFinsh = () => {
+    localStorage.setItem("Troco", `${value}`);
     navigation("/SendOrder");
   };
 
@@ -140,7 +136,6 @@ export default function Payment() {
                     <Button
                       backgroundColor={themes.colorButtonGreen}
                       color={themes.colorTextButtonGreen}
-                      onClick={handleClickNext}
                     >
                       PROSSEGUIR
                     </Button>
