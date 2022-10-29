@@ -6,14 +6,14 @@ import * as S from "./styles";
 
 export default function SendOrder() {
   const text = `
-  Nome: ${localStorage.getItem("Nome")},
-  Contato: ${localStorage.getItem("Contato")},
-  Rua: ${localStorage.getItem("Rua")},
-  Bairro: ${localStorage.getItem("Bairro")},
-  CEP: ${localStorage.getItem("CEP")},
-  Número: ${localStorage.getItem("Numero")},
-  Pagamento: ${localStorage.getItem("Pagamento")},
-  Troco: ${localStorage.getItem("Troco")},
+  *Nome*: ${localStorage.getItem("Nome")},
+  *Contato*: ${localStorage.getItem("Contato")},
+  *Rua*: ${localStorage.getItem("Rua")},
+  *Bairro*: ${localStorage.getItem("Bairro")},
+  *CEP*: ${localStorage.getItem("CEP")},
+  *Número*: ${localStorage.getItem("Numero")},
+  *Pagamento*: ${localStorage.getItem("Pagamento")},
+  *Troco*: ${localStorage.getItem("Troco")},
   ` as string;
   const info = window.encodeURIComponent(text) as string;
   return (

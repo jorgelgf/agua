@@ -46,6 +46,7 @@ export default function Payment() {
     setMoney(true);
     setCard(false);
     setPix(false);
+    setModal(true);
     setStateBoolean(true);
   };
   const handleClickCard = () => {
@@ -66,7 +67,6 @@ export default function Payment() {
   };
   const handleClickNext = () => {
     if (money) {
-      setModal(true);
       localStorage.setItem("Troco", `${value}`);
     }
     navigation("/SendOrder");
