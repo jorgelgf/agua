@@ -22,3 +22,9 @@ export const Container = styled.div`
     }
   }
 `;
+
+export const FooterDiv = styled.footer`
+  font-size: 12px;
+  background-color: var(--bgColor);
+  color: white;
+`;

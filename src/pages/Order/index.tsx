@@ -45,6 +45,12 @@ export default function Order() {
     toast.success("Clique em avançar para prosseguir!");
   };
 
+  const handleCep = () => {
+    const cepFilter: string | undefined = cep?.replace(/\D/g, "");
+    if (cepFilter?.length === 8) {
+      console.log("ok");
+    }
+  };
   return (
     <>
       <title>Seu pedido</title>
@@ -67,7 +73,9 @@ export default function Order() {
             label={cep}
             type={"text"}
             mandatory={false}
-            onChange={(event) => setCepUser(event.target.value)}
+            onChange={(event) => {
+              setCepUser(event.target.value);
+            }}
           />
           <Input
             label={address}

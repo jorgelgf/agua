@@ -4,7 +4,7 @@ type propsItem = {
 };
 
 export const product: propsItem[] = [
-  { name: "Santa Clara", value: "7.00" },
-  { name: "Natal", value: "6.55" },
-  { name: "Fonte Pura", value: "5.45" },
+  { name: "Fonte Cristal", value: "7.00" },
+  { name: "Natalense", value: "6.55" },
+  { name: "Aqua", value: "5.45" },
 ];

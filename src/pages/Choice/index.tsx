@@ -107,11 +107,11 @@ export default function Choice() {
                       +product[2].value * fonteP
                   )
                 }
-                value={
+                value={(
                   +product[0].value * santaC +
                   +product[1].value * natal +
                   +product[2].value * fonteP
-                }
+                ).toFixed(2)}
                 readOnly
               />
             </span>

@@ -9,6 +9,16 @@ export default function Layout({ children }: LayoutProp) {
   return (
     <>
       <S.Container>{children}</S.Container>
+
+      <S.FooterDiv>
+        Desenvolvido por:{" "}
+        <a
+          style={{ textDecoration: "none", color: "white" }}
+          href="https://github.com/jorgelgf"
+        >
+          Jorge Gurgel
+        </a>
+      </S.FooterDiv>
     </>
   );
 }

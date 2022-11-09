@@ -132,11 +132,10 @@ export const TotalInput = styled.input`
   background-color: transparent;
   border: none;
   outline: none;
-  width: 60px;
-  padding: 1rem;
+  width: 100px;
+  font-size: 1.5rem;
   @media (max-width: 520px) {
-    font-size: 2rem;
-    padding: 1rem;
+    font-size: 25px;
   }
 `;
 export const ButtonDecision = styled.div`

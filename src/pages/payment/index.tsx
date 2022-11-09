@@ -136,6 +136,7 @@ export default function Payment() {
                     <Button
                       backgroundColor={themes.colorButtonGreen}
                       color={themes.colorTextButtonGreen}
+                      onClick={handleClickFinsh}
                     >
                       PROSSEGUIR
                     </Button>
