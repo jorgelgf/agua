@@ -45,12 +45,6 @@ export default function Order() {
     toast.success("Clique em avançar para prosseguir!");
   };
 
-  const handleCep = () => {
-    const cepFilter: string | undefined = cep?.replace(/\D/g, "");
-    if (cepFilter?.length === 8) {
-      console.log("ok");
-    }
-  };
   return (
     <>
       <title>Seu pedido</title>
