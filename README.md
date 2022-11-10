@@ -4,6 +4,6 @@
 
 ## Tela inicial
 
-<img scr='https://i.ibb.co/4FYZjy9/1-min.png' alt='index screen'>
+<img src='https://i.ibb.co/4FYZjy9/1-min.png' alt='index screen'>
 
 Clique <a href='https://agua-site.netlify.app/'>AQUI</a> para ver o projeto.
