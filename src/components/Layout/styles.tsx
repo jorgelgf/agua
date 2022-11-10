@@ -17,9 +17,6 @@ export const Container = styled.div`
     height: auto;
   }
 
-  @media (min-height: 800px) {
-    min-height: auto;
-  }
   @keyframes animeLeft {
     to {
       opacity: 1;
