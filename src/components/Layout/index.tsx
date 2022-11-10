@@ -8,17 +8,19 @@ interface LayoutProp {
 export default function Layout({ children }: LayoutProp) {
   return (
     <>
-      <S.Container>{children}</S.Container>
+      <S.Container>
+        {children}
 
-      <S.FooterDiv>
-        Desenvolvido por:{" "}
-        <a
-          style={{ textDecoration: "none", color: "white" }}
-          href="https://github.com/jorgelgf"
-        >
-          Jorge Gurgel
-        </a>
-      </S.FooterDiv>
+        <S.FooterDiv>
+          Desenvolvido por:{" "}
+          <a
+            style={{ textDecoration: "none", color: "white" }}
+            href="https://github.com/jorgelgf"
+          >
+            Jorge Gurgel
+          </a>
+        </S.FooterDiv>
+      </S.Container>
     </>
   );
 }

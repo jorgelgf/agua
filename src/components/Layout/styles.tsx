@@ -14,6 +14,11 @@ export const Container = styled.div`
 
   @media (max-width: 460px) {
     width: auto;
+    height: auto;
+  }
+
+  @media (min-height: 800px) {
+    min-height: auto;
   }
   @keyframes animeLeft {
     to {
@@ -25,7 +30,7 @@ export const Container = styled.div`
 
 export const FooterDiv = styled.footer`
   font-size: 12px;
-  margin-bottom: 10px;
+  margin-top: 100px;
   color: var(--colorFontForm);
   font-family: "Roboto";
 `;

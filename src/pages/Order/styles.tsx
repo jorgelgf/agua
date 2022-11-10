@@ -11,6 +11,10 @@ export const ContainerCenter = styled.div`
   @media (max-width: 460px) {
     display: inline;
   }
+
+  @media (min-height: 800px) {
+    min-height: auto;
+  }
 `;
 export const DivInput = styled.div`
   @media (max-width: 500px) {
