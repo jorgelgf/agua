@@ -5,7 +5,7 @@ import Layout from "../../components/Layout/index";
 import { useNavigate } from "react-router";
 import * as S from "./styles";
 import { Header } from "../../components/Header";
-
+import { toast } from "react-toastify";
 export default function Index() {
   const navigation = useNavigate();
 
@@ -15,6 +15,8 @@ export default function Index() {
     navigation("/order");
   };
 
+  const handleClickRegister = () =>
+    toast.warning("Cadastro ainda está em desenvolvimento");
   useEffect(() => {
     localStorage.setItem("validation", `${permission}`);
   }, [permission]);
@@ -37,7 +39,7 @@ export default function Index() {
           </div>
         </S.DivButton1>
 
-        <S.Link>FAÇA SEU CADASTRO AQUI</S.Link>
+        <S.Link onClick={handleClickRegister}>FAÇA SEU CADASTRO AQUI</S.Link>
       </Layout>
     </>
   );
