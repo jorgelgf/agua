@@ -1,6 +1,6 @@
 # Sua Água
 
-### Projeto desenvolvido em React+TS consumindo uma API do WhatsApp.
+### Projeto desenvolvido em React+TS - consumindo uma API do WhatsApp.
 
 ## Tela inicial
 
