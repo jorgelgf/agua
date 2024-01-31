@@ -1,9 +1,9 @@
 # Sua Água
 
-### Projeto desenvolvido em React+TS - consumindo uma API do WhatsApp.
+### Project developed in React+TS - consuming a WhatsApp API.
 
-## Tela inicial
+## Home screen
 
 <img src='https://i.ibb.co/4FYZjy9/1-min.png' alt='index screen'>
 
-Clique <a href='https://agua-site.netlify.app/'>AQUI</a> para ver o projeto.
+Click <a href='https://agua-site.netlify.app/'>HERE</a> to see the project.
